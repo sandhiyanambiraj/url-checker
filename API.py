@@ -2,7 +2,7 @@
 from tensorflow import keras
 from Feature_Extractor import extract_features
 
-
+import numpy as np
 # ------------------------------------------------------------------------
 
 # This function takes the url and returns probability value
@@ -16,7 +16,7 @@ def get_prediction(url, model_path):
     print(url_features)
 
     print("Making prediction...")
-    prediction = model.predict([url_features])
+    prediction = model.predict(np.array([url_features]))
 
     i = prediction[0][0] * 100
     i = round(i,3)

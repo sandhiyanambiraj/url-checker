@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+.env
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Dependency directories
+lib/
+lib64/
+include/
+bin/
+
+# Log files
+*.log
+
+
+
+# IDE files
+.vscode/
+.idea/
+
+# Cached files
+*.cache
+
+# System files
+.DS_Store
+Thumbs.db
